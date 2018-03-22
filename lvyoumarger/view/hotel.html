@@ -1,0 +1,71 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">酒店管理</div>
+    <!--筛选-->
+    <div class="user-search" style="display:inline-block;">
+        <input type="text" placeholder="请输入城市" class="user-input" ng-model="keyword">
+        <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+        </button>
+    </div>
+    <button class="btn btn-default" ng-click="btnAddHotel()"><i class="glyphicon glyphicon-plus"></i>添加酒店</button>
+    <div class="hotel-page">
+        <table class="table table-hover">
+            <thead>
+            <tr class="user-thead">
+                <th>序号</th>
+                <th>酒店名称</th>
+                <th>地址</th>
+                <th>logo</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody class="user-tbody">
+            <tr ng-repeat="item in items|searchFilter:keyword" ng-show="keyword==''" >
+                <td>{{$index+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.address}}</td>
+                <td>
+                    <img style="width:100px;height: 100px;" ng-src="{{item.imageList[0]}}">
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="btnHotelDetail(item.id)">查看详情</button>
+                    <button class="btn btn-default"  ng-click="btnHotelEdit(item.id)">编辑</button>
+                    <!--<button class="btn btn-default"  ng-click="btnDeteleHotel(item.id)">删除</button>-->
+                </td>
+            </tr>
+            <tr ng-repeat="item in hotelList|searchFilter:keyword" ng-show="keyword!=''" >
+                <td>{{$index+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.address}}</td>
+                <td>
+                    <img style="width:100px;height: 100px;" ng-src="{{item.imageList[0]}}">
+                </td>
+                <td>
+                    <button class="btn btn-default" ng-click="btnHotelDetail(item.id)">查看详情</button>
+                    <button class="btn btn-default"  ng-click="btnHotelEdit(item.id)">编辑</button>
+                    <!--<button class="btn btn-default"  ng-click="btnDeteleHotel(item.id)">删除</button>-->
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <!--分页-->
+        <nav>
+            <ul class="pagination" style="cursor: pointer;" ng-show="keyword==''">
+                <li>
+                    <a ng-click="Previous()">
+                        <span>上一页</span>
+                    </a>
+                </li>
+                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+                    <a ng-click="selectPage(page)" >{{ page }}</a>
+                </li>
+                <li>
+                    <a ng-click="Next()">
+                        <span>下一页</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">路线管理</div>
+    <div class="route-page">
+        <button class="btn btn-default" ng-click="btnAddRoute()">添加线路<i class="glyphicon glyphicon-plus"></i></button>
+        <div class="scenery-page">
+            <table class="table table-hover">
+                <thead>
+                <tr class="user-thead">
+                    <th>序号</th>
+                    <th>线路名称</th>
+                    <th>线路logo</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class="user-tbody">
+                    <tr ng-repeat="item in items">
+                        <td>{{$index+1}}</td>
+                        <td>{{item.name}}</td>
+                        <td>
+                            <img ng-src="{{item.image}}" style="width:100px; height: 100px;">
+                        </td>
+                        <td>
+                            <button class="btn btn-default" ng-click="btnPlans(item.id,item.name,item.provinceId)">发布行程</button>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+        <!--分页-->
+        <nav>
+            <ul class="pagination" style="cursor: pointer;">
+                <li>
+                    <a ng-click="Previous()">
+                        <span>上一页</span>
+                    </a>
+                </li>
+                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+                    <a ng-click="selectPage(page)" >{{ page }}</a>
+                </li>
+                <li>
+                    <a ng-click="Next()">
+                        <span>下一页</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

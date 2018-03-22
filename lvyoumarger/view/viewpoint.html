@@ -1,0 +1,53 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">评论管理</div>
+    <div class="viewpoint-page">
+        <ul class="check-page">
+            <li ng-class="{'activedviewpoint':isState1}" ng-click="isStateCheck()">未审核</li>
+            <li ng-class="{'activedviewpoint':isState2}" ng-click="StateCheckIs()">已审核</li>
+        </ul>
+        <!--未审核-->
+        <div class="check-viewpoint" ng-show="isState1">
+            <!--所有还没审核的-->
+            <div class="discuss-container" ng-repeat="item in viewPointList">
+                <div class="discuss" ng-show="item.state==0">
+                    <div class="use-discuss-info">
+                        <div class="touxiang">
+                            <img ng-src="{{item.userList[0].headerPath}}" class="img-urse"></div>
+                        <span class="green">{{item.userList[0].nickName}}</span>
+                        <button class="btn btn-default checkState" ng-show="item.state==0" ng-click="btnCheck(item)">待审核</button>
+                    </div>
+                    <div class="use-discuss-text">
+                     {{item.content}}
+                    </div>
+                    <div class="bandang-opeater">
+                        <span>发布时间：</span>
+                        <span  id="send-fasongtime" class="banggrey">{{item.time}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--已经审核-->
+        <div class="ischeck-viewpoint" ng-show="isState2">
+            <!--所有已经审核-->
+            <div class="discuss-container" ng-repeat="item in viewPointList">
+                <div class="discuss" ng-show="item.state==1">
+                    <div class="use-discuss-info">
+                        <div class="touxiang">
+                            <img ng-src="{{item.userList[0].headerPath}}" class="img-urse"></div>
+                        <span class="green">{{item.userList[0].nickName}}</span>
+                        <span class="checkState" ng-show="item.state==1">已审核</span>
+                    </div>
+                    <div class="use-discuss-text">
+                        {{item.content}}
+                    </div>
+                    <div class="bandang-opeater">
+                        <span>发布时间：</span>
+                        <span class="banggrey">{{item.time}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

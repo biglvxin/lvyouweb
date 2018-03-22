@@ -1,0 +1,72 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">景点管理</div>
+    <!--筛选-->
+    <div class="user-search" style="display:inline-block;">
+        <input type="text" placeholder="请输入景点名称" class="user-input" ng-model="keyword">
+        <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+        </button>
+    </div>
+    <button class="btn btn-default" ng-click="btnAddScenery()"><i class="glyphicon glyphicon-plus"></i> 添加景点</button>
+    <div class="scenery-page">
+        <table class="table table-hover">
+            <thead>
+                <tr class="user-thead">
+                    <th>序号</th>
+                    <th>城市</th>
+                    <th>景点名称</th>
+                    <th>logo</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody class="user-tbody">
+                <tr ng-repeat="item in items|searchFilter:keyword" ng-show="keyword==''" >
+                    <td>{{$index+1}}</td>
+                    <td>{{item.area}}</td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <img ng-src="{{item.imageList[1]}}" style="width:100px;height: 100px;">
+                    </td>
+                    <td>
+                        <button class="btn btn-default" ng-click="btnSceneryDetail(item.id)">查看详情</button>
+                        <button class="btn btn-default" ng-click="btnEditScenery(item.id)">编辑</button>
+                        <button class="btn btn-default" ng-click="btnDeteleScenery(item.id)">删除</button>
+                    </td>
+                </tr>
+                <tr ng-repeat="item in sceneryList|searchFilter:keyword" ng-show="keyword!=''" >
+                    <td>{{$index+1}}</td>
+
+                    <td>{{item.area}}</td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <img ng-src="{{item.imageList[1]}}" style="width:100px;height: 100px;">
+                    </td>
+                    <td>
+                        <button class="btn btn-default" ng-click="btnSceneryDetail(item.id)">查看详情</button>
+                        <button class="btn btn-default" ng-click="btnEditScenery(item.id)">编辑</button>
+                        <button class="btn btn-default" ng-click="btnDeteleScenery(item.id)">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--分页-->
+        <nav>
+            <ul class="pagination" style="cursor: pointer;" ng-show="keyword==''">
+                <li>
+                    <a ng-click="Previous()">
+                        <span>上一页</span>
+                    </a>
+                </li>
+                <li ng-repeat="page in pageList" ng-class="{active: isActivePage(page)}" >
+                    <a ng-click="selectPage(page)" >{{ page }}</a>
+                </li>
+                <li>
+                    <a ng-click="Next()">
+                        <span>下一页</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

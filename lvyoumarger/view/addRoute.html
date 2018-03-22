@@ -1,0 +1,33 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">添加线路</div>
+    <div class="addRoute-page">
+        <div>
+            <button class="btn btn-default  sceneryedit" ng-click="btnAddArea()">区域<i class="glyphicon glyphicon-plus"></i></button>
+            <label id="areaName" class="areaName">{{route.province}}</label>
+        </div>
+        <div class="add">
+            <div class="add-item">
+                <label>线路名称</label>
+                <input type="text" placeholder="" ng-model="route.name">
+            </div>
+            <div class="add-item">
+                <input type="file" name="sceneryImg[]" id="fileUpload1">
+                <img src="images/pig.jpg" id="imgone" style="width:200px; height: 200px;">
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-primary posssave" ng-click="btnAddRoute(route)">保存</button>
+            <button class="btn btn-warning posssave" ng-click="goBack()">返回上一级</button>
+        </div>
+        <!--模式对话框-->
+        <div class="dialog" ng-show="diastate==1">
+            <div class="dialog-info">
+                <div class="a-container" ng-repeat="item in provinceList">
+                    <span ng-click="selectArea(item)">{{item.name}}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

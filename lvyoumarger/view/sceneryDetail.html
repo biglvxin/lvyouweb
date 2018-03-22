@@ -1,0 +1,60 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">景点详情</div>
+    <div class="scenerydetail-page">
+        <div class="sdetailcontent-title">{{singleScenery[0].name}}<button class="btn btn-class backbtn" ng-click="goBack();">返回</button></div>
+        <div class="sdetail-imgtitle">
+            <div class="imgtitle-left">
+                <img ng-src="{{singleScenery[0].imageList[0]}}">
+            </div>
+            <div class="imgtitle-right">
+                <div class="title-rtop">
+                    <img ng-src="{{singleScenery[0].imageList[1]}}">
+                </div>
+                <div class="title-rbottom">
+                    <img ng-src="{{singleScenery[0].imageList[2]}}">
+                </div>
+
+            </div>
+        </div>
+        <!--景点详情介绍细节-->
+        <div class="sdetail-introude">
+            <div class="sdetail-titletext">景点简介</div>
+            <div class="textintround-container">
+                {{singleScenery[0].introduceDetail}}
+            </div>
+            <div class="text-list">
+                <div class="text-sdlist-item">
+                    <div class="sdetail-titletext">电话</div>
+                    <div class="textintround-container sizechange">{{singleScenery[0].phone}}</div>
+                </div>
+                <div class="text-sdlist-item">
+                    <div class="sdetail-titletext">网址</div>
+                    <div class="textintround-container sizechange">{{singleScenery[0].httpAddress}}</div>
+                </div>
+                <div class="text-sdlist-item">
+                    <div class="sdetail-titletext">用时参考</div>
+                    <div class="textintround-container sizechange">1-2个小时</div>
+                </div>
+            </div>
+            <div class="text-listtitle">
+                <div class="sdetail-titletext">交通</div>
+                <div class="textintround-container noborder2">{{singleScenery[0].transfer}}</div>
+
+            </div>
+            <div class="text-listtitle">
+                <div class="sdetail-titletext">门票</div>
+                <div class="textintround-container noborder2">{{singleScenery[0].price}}</div>
+            </div>
+            <div class="text-listtitle">
+                <div class="sdetail-titletext">开放时间</div>
+                <div class="textintround-container noborder2">{{singleScenery[0].open}}</div>
+
+            </div>
+            <div class="text-listtitle">
+                <div class="sdetail-titletext">景点位置</div>
+                <div class="textintround-container noborder2">{{singleScenery[0].address}}</div>
+            </div>
+        </div>
+    </div>
+</div>

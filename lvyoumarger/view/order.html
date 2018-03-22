@@ -1,0 +1,38 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">用户订单详情</div>
+    <!--筛选-->
+    <div class="user-search">
+        <input type="text" placeholder="请输入用户的电话号码" class="user-input">
+        <button class="btn btn-default">
+            <i class="glyphicon glyphicon-search"></i>
+        </button>
+    </div>
+
+    <div class="order-page">
+        <!--<div class="table table-hover">-->
+            <ul class="order-title">
+                <li>酒店</li>
+                <li>入住时间</li>
+                <li>住房类型</li>
+                <li>交易状态</li>
+            </ul>
+            <div class="order-item" ng-repeat="item in userOrder">
+                <div class="order-item-id"><span>订单号：</span><span>{{item.id}}</span></div>
+                <ul class="order-content">
+                    <li>
+                        <img  ng-src="{{item.hotelList.logo}}">
+                        <div class="order-info">
+                            <div class="info-item"><span>酒店名称:</span><span class="hotel-name">{{item.hotelList.name}}</span></div>
+                            <div class="info-item"><span>酒店位置：</span><span>{{item.hotelList.address}}</span></div>
+                        </div>
+                    </li>
+                    <li>{{item.orderTime}}</li>
+                    <li>{{item.roomTypeList[0].name}}</li>
+                    <li>已预定</li>
+                </ul>
+            </div>
+        <!--</div>-->
+
+    </div>
+</div>

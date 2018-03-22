@@ -1,0 +1,74 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">添加景点</div>
+    <div class="add-scenery-page">
+        <div class="add">
+            <div>
+                <button class="btn btn-default  sceneryedit" ng-click="btnAddArea()">区域<i class="glyphicon glyphicon-plus"></i></button>
+                <label id="areaName" class="areaName">{{scenery.area}}</label>
+            </div>
+            <div class="add-item">
+                <label>景点名称：</label>
+                <input type="text" placeholder="" ng-model="scenery.sceneryName">
+            </div>
+            <div class="add-item">
+                <label>景点标题：</label>
+                <input type="text" placeholder="" ng-model="scenery.introduceTitle">
+            </div>
+            <div class="add-item">
+                <label>景点地址：</label>
+                <input type="text" placeholder="" ng-model="scenery.address">
+            </div>
+            <div class="add-item">
+                <label>景点网址：</label>
+                <input type="text" placeholder="" ng-model="scenery.httpAddress">
+            </div>
+            <div class="add-item">
+                <label>景点交通：</label>
+                <input type="text" placeholder="" ng-model="scenery.transfer">
+            </div>
+            <div class="add-item">
+                <label>景点价格：</label>
+                <input type="text" placeholder="" ng-model="scenery.price">
+            </div>
+            <div class="add-item">
+                <label>开放时间：</label>
+                <input type="text" placeholder="" ng-model="scenery.open">
+            </div>
+            <label>景点简介：</label>
+            <div class="add-item">
+               <textarea class="area-text" ng-model="scenery.introduceDetail" ></textarea>
+            </div>
+            <div class="file-pos">
+                <!--<input type="file" name="sceneryImg" id="seclectImg" >-->
+                <!--<div id="divImages">-->
+                    <input type="file" name="sceneryImg[]" id="fileUpload1">
+                    <img src="images/pig.jpg" id="imgone">
+                    <input type="file" name="sceneryImg[]" id="fileUpload2">
+                    <img src="images/pig.jpg" id="imgtwo">
+                    <input type="file" name="sceneryImg[]" id="fileUpload3">
+                    <img src="images/pig.jpg" id="imgthree">
+                <!--</div>-->
+            </div>
+            <!--模式对话框-->
+            <div class="dialog" ng-show="diastate==1">
+                <div class="dialog-info">
+                    <div class="a-container" ng-repeat="item in areaList">
+                        <span ng-click="selectArea(item)">{{item.name}}</span>
+                    </div>
+                </div>
+            </div>
+            <!--添加成功的提示框-->
+            <div class="dialoginfo" id="dialoginfo" ng-show="isSuccess">
+                <div class="dialogchild-info" ng-show="isSuccess">添加成功</div>
+            </div>
+
+
+        </div>
+        <div>
+            <button class="btn btn-primary posssave" ng-click="btnAddSave(scenery)">保存</button>
+            <button class="btn btn-warning posssave" ng-click="goBack()">返回上一级</button>
+        </div>
+
+    </div>
+</div>

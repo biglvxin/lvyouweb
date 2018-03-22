@@ -1,0 +1,619 @@
+.user-page,.scenery-page,.hotel-page{
+    margin-top:20px;
+}
+
+
+/*****************头部*****************/
+.header{
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    height:50px;
+    background-color:#000;
+}
+/***************左侧导航******************/
+.side{
+    position: fixed;
+    left:0px;
+    top:52px;
+    width:220px;
+    bottom:0px;
+    background-color: #000;
+}
+.side ul li{
+    height: 48px;
+    line-height: 48px;
+    color:#fff;
+    padding-left:10px;
+    font-size: 20px;
+}
+.side a{
+    color:#fff;
+    text-decoration: none;
+    padding-left:10px;
+    font-size: 20px;
+}
+.actived{
+    background-color:#67b168;
+}
+/********导航************/
+.view{
+    position: absolute;
+    left:222px;
+    top:52px;
+    bottom:0px;
+    background-color:#f2f2f2;
+    right:0px;
+    overflow:auto;
+}
+.title{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom:1px solid #d9d9d9;
+    padding-left:10px;
+}
+/****************用户管理*****************/
+
+.user-search{
+    margin-top:20px;
+}
+.user-input{
+    outline: none;
+    border: 1px solid #d9d9d9;
+    line-height: 32px;
+    border-radius: 12px;
+    margin-left: 10px;
+    width: 222px;
+ }
+.header-img>img{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+}
+.user-thead{
+    background-color: #d9d9d9;
+    height: 48px;
+    line-height: 48px;
+    /*text-align: center;*/
+}
+thead>tr>th{
+    text-align: center!important;
+}
+.user-tbody>tr>td{
+    text-align: center;
+    line-height: 100px!important;
+    /*vertical-align: middle!important;*/
+}
+/***************用户订单*****************/
+.order-page{
+    width:100%;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.order-item{
+    margin-bottom: 20px;
+    border:1px solid #d9d9d9;
+}
+.order-item-id{
+    border-bottom: 1px solid #d9d9d9;
+    height: 48px;
+    line-height: 48px;
+}
+.order-title{
+    height: 48px;
+    border:1px solid #d9d9d9;
+    line-height: 48px;
+}
+.order-title>li{
+    display: inline-block;
+    padding:0px 90px;
+}
+.order-content>li{
+    display: inline-block;
+    padding:0px 15px;
+    width: 265px;
+}
+.order-content>li>img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.order-content{
+    border-bottom: 1px solid #d9d9d9;
+    padding:10px 0px;
+}
+.order-info{
+    display: inline-block;
+}
+.hotel-name{
+    display: inline-block;
+    vertical-align: top;
+}
+.order-opterar{
+    height: 36px;
+    line-height: 36px;
+    margin-left:957px;
+}
+/***************景点管理***************/
+.addpos{
+    margin-top:20px!important;
+}
+/********景点详情*********/
+.scenerydetail-page{
+    width: 1080px;
+    margin-left:10px;
+}
+.sdetailcontent-title{
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    border:1px dashed #d9d9d9;
+    margin: 20px 0px;
+}
+.imgtitle-left,.imgtitle-right{
+    display: inline-block;
+    vertical-align: top;
+    padding:20px 0px;
+}
+.sdetail-imgtitle{
+    margin-left:20px;
+}
+.imgtitle-left>img{
+    width: 690px;
+    height: 370px;
+    margin-left:-19px;
+}
+.title-rtop>img,.title-rbottom>img{
+    width:305px;
+    height: 183px;
+}
+.title-rbottom>img{
+    margin-top:3px;
+}
+.sdetail-titletext{
+    font-size: 16px;
+    line-height: 32px;
+    margin-top:20px;
+}
+.textintround-container{
+    /*height: 100px;*/
+    overflow: auto;
+    border-bottom: 1px solid #d9d9d9;
+    color:#666;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+.sizechange{
+    border-bottom: 0px solid #d9d9d9;
+    height: 50px;
+}
+.noborder2{
+    /*height: 60px;*/
+    border-bottom: 0px solid #d9d9d9;
+    /*overflow: auto;*/
+}
+.text-list{
+    font-size: 0px;
+}
+.text-sdlist-item{
+    width: 360px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.discuss{
+    min-height: 130px;
+    border-bottom: 1px dashed #d9d9d9;
+    padding: 20px 0px;
+}
+.use-discuss-info{
+    height: 48px;
+    position: relative;
+}
+.touxiang{
+    display: inline-block;
+}
+.img-urse{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.zangimg{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 519px;
+    cursor:pointer;
+}
+.bandang-opeater{
+    position: relative;
+
+}
+.banggrey{
+    color:#aaa;
+}
+.pinglun-scenerydetail{
+    position: absolute;
+    right:10px;
+    cursor: pointer;
+}
+.pinglun-scenerydetail:hover{
+    color:#5CAD77;
+}
+.sdhuifu{
+    width: 1080px;
+    min-height: 80px;
+    border-top:1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+.green{
+    color:#5CAD77;
+    width: 400px;
+    display: inline-block;
+}
+.sdhuifu>img{
+    width: 20px;
+    height: 20px;
+}
+.huifupos{
+    margin-left: 938px;
+}
+.huifu-content{
+    min-height:50px;
+}
+.pinglun-content{
+    width: 1080px;
+    height: 150px;
+    border:1px solid #5CAD77;
+    margin: 20px 0px;
+}
+.btnhuifupos{
+    margin-left: 998px;
+}
+.pinglun-border{
+    display: none;
+}
+.sdhotel-left,.sdhotel-right{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.place-hotel-container{
+    width: 1080px;
+    margin:auto;
+}
+.sdhotel-left img{
+    width: 620px;
+    height: 420px;
+}
+.sdright-top,.sdright-bottom{
+    width: 340px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.sdright-bottom{
+    margin-top:19px;
+}
+.near-hotel-title{
+    height: 52px;
+    width: 620px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top:369px;
+    left:0px;
+    line-height: 52px;
+    color:#fff;
+}
+.sdpricepos{
+    margin-left:486px;
+}
+.sdpricepos-small{
+    position: absolute;
+    left: 119px;
+    margin-left: 169px;
+}
+.near-small{
+    width: 340px;
+    top:148px;
+}
+.notes-pos{
+    margin-left: 994px;
+    margin-top: -100px;
+}
+#container{
+    width: 1080px!important;
+    height: 360px!important;
+    display: inline-block !important;
+    position: relative!important;
+    top:40px !important;
+}
+#tip{
+    left: 0px!important;
+    right: 0px!important;
+    width: 360px!important;
+    top:-360px!important;
+    position: relative!important;
+    width: 360px!important;
+}
+.dialog{
+    position: fixed;
+    left:222px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    /*display: none;*/
+}
+.dialog-info{
+    position: relative;
+    width: 712px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.3);
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    /*text-align: center;*/
+    line-height: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.a-container{
+    display: inline-block;
+}
+.a-container>span{
+    color:#fff;
+    margin-left:10px;
+    cursor: pointer;
+}
+.backbtn{
+    margin-left: 925px;
+}
+/********************酒店详情页***********************/
+.hoteldetail-page{
+    width: 1080px;
+    margin:auto;
+    margin-top:122px;
+}
+.hoteldetail-place{
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    border:1px dashed #d9d9d9;
+    margin: 20px 0px;
+}
+.hoteldetail-img{
+    margin-left:-41px;
+}
+.hoteldetail-img>img{
+    display: inline-block;
+    width: 300px;
+    height: 240px;
+    margin-bottom: 20px;
+    margin-left:40px;
+}
+.hotelgonglv-pageul{
+    min-height: 50px;
+    overflow: auto;
+    border-bottom: 1px solid #d9d9d9;
+}
+.hotelgonglv-pageul>li{
+    color:#aaa;
+    display: inline-block;
+}
+.hotelgonglv-pageul img{
+    width: 16px;
+    height: 16px;
+}
+/****************增加景点*********************/
+.add-item{
+    margin-top:20px;
+}
+.add-item>input{
+    border:1px solid #d9d9d9;
+    outline:none;
+    width: 400px;
+    height: 32px;
+}
+.area-text{
+    width: 80%;
+    height: 400px;
+    overflow: auto;
+}
+.file-pos{
+    position: absolute;
+    top: 76px;
+    left: 570px;
+}
+.image-item{
+    width:128px;
+    margin-right: 6px;
+}
+.image-item>img{
+    display: block;
+    width:100%;
+}
+.file-pos>img{
+    width: 100px;
+    height:100px;
+    border:1px solid #d9d9d9;
+}
+.posssave{
+    position: relative;
+    bottom: 0px;
+}
+.add-item>label{
+    color:#666;
+}
+.areaName{
+    margin-top:10px;
+}
+.add-scenery-page{
+    margin-left:10px;
+}
+.dialoginfo{
+    position: fixed;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    display: none;
+    /*background-color:;*/
+}
+.dialogchild-info{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.3);
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.addHotel-price{
+    outline: none;
+    border:1px solid #d9d9d9;
+    border-radius: 5px;
+    line-height: 32px;
+}
+/*******************添加酒店页**************************/
+.addHotel-price{
+    outline: none;
+    border:1px solid #d9d9d9;
+    border-radius: 5px;
+    line-height: 32px;
+}
+.hotel-logo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+.file-logo{
+    position: absolute;
+    top: 58px;
+    left: 659px;
+}
+.hotelDetail-img-item{
+    display: inline-block;
+    margin-top: 160px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.hotelDetail-img-item>img{
+    width: 150px;
+    height: 150px;
+}
+.select-roomtype{
+    height: 32px;
+}
+/**********************行程安排*************************/
+.planbtnpos{
+    position: relative;
+    left: 0px;
+    top: -1px;
+}
+.plan-tabeltitle{
+
+    border:1px solid #d9d9d9;
+    background-color:#d9d9d9;
+    font-weight:bold;
+}
+thead>tr>td{
+    text-align:center!important;
+}
+.rowwidth>td{
+    text-align:center!important;
+    line-height: 100px!important;
+    width: 33.33333%;
+}
+.routeName{
+    text-align:center;
+    line-height: 48px;
+    width: 100%;
+}
+/*****************行程安排页*********************/
+.parent-dialog{
+    position: fixed;
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.3);
+}
+.child-dialog{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 480px;
+    min-height: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:#fff;
+}
+.btnposplan{
+    margin-left: 358px;
+    margin-top: 20px;
+}
+.plan-scenery-item{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-left:10px;
+    cursor: pointer;
+}
+.scenery-img{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+    width:100px;
+}
+.item-cover{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top:60px;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+}
+.widthchild{
+    width:60%;
+}
+.seneryPlanPos{
+    margin-left:80%;
+    margin-bottom:20px;
+}
+.playtime-pos{
+    margin-top:50px;
+}
+.addBorder{
+    border:1px solid #f00;
+}
+/**********************评论管理***************************/
+.check-page>li{
+    display: inline-block;
+    padding:0px 16px;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+}
+.activedviewpoint{
+    border-bottom:2px solid #5cb85c;
+}
+.checkState{
+    position: relative;
+    left: 600px;
+    top: -3px;
+}

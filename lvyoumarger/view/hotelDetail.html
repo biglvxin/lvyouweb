@@ -1,0 +1,40 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">酒店详情页</div>
+    <div class="hotel-detail-page">
+        <!--酒店详情内容-->
+        <div class="hoteldetail-content">
+            <div class="hoteldetail-place">{{singleHotel.name}}<button class="btn btn-class backbtn" ng-click="goBack();">返回</button></div>
+            <div class="hoteldetail-img">
+                <img ng-src="{{singleHotel.imageList[0]}}">
+                <img ng-src="{{singleHotel.imageList[1]}}">
+                <img ng-src="{{singleHotel.imageList[2]}}">
+            </div>
+            <!--酒店攻略详情-->
+            <div class="hotel-gonglv">
+                <ul class="hotelgonglv-pageul">基本信息:
+                    <li>入住时间：14：00-18：00</li>
+                    <li>离店时间：12：00之前</li>
+                </ul>
+                <ul class="hotelgonglv-pageul">主要设施:
+                    <li><img src="images/wifi2.png">免费wifi</li>
+                    <li><img src="images/dianti.png">电梯</li>
+                    <li><img src="images/cnagtang.png">餐厅</li>
+                    <li><img src="images/xingli.png">行李寄存</li>
+                    <li><img src="images/allday.png">24小时服务</li>
+                    <li><img src="images/reshuihu.png">热水壶</li>
+                    <li><img src="images/chuifengji.png">吹风机</li>
+                </ul>
+                <ul class="hotelgonglv-pageul">酒店攻略:
+                    <li>酒店内设免费停车场，客房干净卫生，基础设施齐全，提供免费wifi服务。</li>
+                </ul>
+                <ul class="hotelgonglv-pageul">品牌信息:
+                    <li>经济型酒店品牌。</li>
+                </ul>
+                <ul class="hotelgonglv-pageul">酒店地址:
+                    <li>{{singleHotel.address}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

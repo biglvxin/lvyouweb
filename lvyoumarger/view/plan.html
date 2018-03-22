@@ -1,0 +1,95 @@
+<div>
+    <nav-directive select-nav="{{selectNav}}"></nav-directive>
+    <div class="title">行程安排</div>
+    <div class="plan-page">
+        <!--table table-bordered-->
+        <button class="btn btn-default" ng-click="btnAddPlan()">添加行程<i class="glyphicon glyphicon-plus"></i></button>
+        <div class="plan-container">
+            <label class="routeName">{{routeName}}</label>
+            <div class="plan-item" ng-repeat="item in planList">
+                <div class="plan-title">
+                    <span>day{{$index+1}}</span>
+                    <label>行程名称:{{item.title}}</label>
+                    <!--<label>行程优先级：{{item.priority}}</label>-->
+                    <button class="btn btn-default planbtnpos" ng-click="btnAddPlanScenery(item.id)">添加景点<i class="glyphicon glyphicon-plus"></i></button>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="plan-tabeltitle">
+                            <td>景点名称</td>
+                            <td>图片看点</td>
+                            <td>游玩时间/小时</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="sceneryitem in item.sceneryList" class="rowwidth">
+                            <td style="text-align: left">{{sceneryitem.sceneryDetail[0].name}}</td>
+                            <td>
+                                <img ng-src="{{sceneryitem.sceneryDetail[0].imageList[1]}}" style="width:100px; height:100px;">
+                            </td>
+                            <td>{{sceneryitem.time}}/小时</td>
+                            <!--<td>{{sceneryitem.priority}}</td>-->
+                            <td>
+                                <button class="btn btn-default" ng-click="btnDeletePlanScenery(sceneryitem.sceneryId,item.id)">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--添加行程的模式框-->
+            <div class="parent-dialog" ng-show="isShows">
+                <div class="child-dialog">
+                    <div class="add">
+                        <div class="add-item">
+                            <label>行程名称：</label>
+                            <input type="text" ng-model="plan.name">
+                        </div>
+                        <div class="add-item">
+                            <label>优先级别：</label>
+                            <input type="text" ng-model="plan.priority">
+                        </div>
+                        <div class="btnposplan">
+                            <button class="btn btn-primary" ng-click="addSavePlan(plan.id)">确定</button>
+                            <button class="btn btn-default" ng-click="btnCancelPlan()">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--添加景点的模式框-->
+            <div class="parent-dialog" ng-show="isShowAddPlanScenery">
+                <div class="child-dialog widthchild">
+                    <div>
+                        <!--根据省份得到可选景点-->
+                        <label>可选景点</label>
+                        <div class="scenery-plan-container">
+                            <div class="plan-scenery-item" ng-repeat="item in provinceScenery">
+                                <div class="scenery-img">
+                                    <img ng-src="{{item.imageList[1]}}" style="width:100px;height:100px;" ng-click="selectImage(item)"
+                                         ng-class="{'addBorder':item.isClick}">
+                                    <div class="item-cover">
+                                        {{item.name}}
+                                    </div>
+                                </div>
+                             </div>
+
+                        </div>
+                    </div>
+                    <div class="playtime-pos">
+                        <!--根据省份得到可选景点-->
+                        <label>游玩时间</label>
+                       <input type="text" ng-model="planScenery.time"><span>小时</span>
+                    </div>
+                    <div class="btnposplan seneryPlanPos">
+                        <button class="btn btn-primary" ng-click="addSavePlanScenery()">确定</button>
+                        <button class="btn btn-default" ng-click="btnCancelPlanScenery()">取消</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
