@@ -1,0 +1,54 @@
+.self-page{
+	width: 1080px;
+	margin:auto;
+	margin-top:122px;
+}
+.order-item{
+	margin-bottom: 20px;
+	border:1px solid #d9d9d9;
+}
+.order-item-id{
+	border-bottom: 1px solid #d9d9d9;
+	height: 48px;
+	line-height: 48px;
+}
+.order-title{
+	height: 48px;
+	border:1px solid #d9d9d9;
+	line-height: 48px;
+}
+.order-title>li{
+	display: inline-block;
+	padding:0px 90px;
+}
+.order-content>li{
+	display: inline-block;
+	padding:0px 15px;
+	width: 265px;
+}
+.order-content>li>img{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+.order-content{
+	border-bottom: 1px solid #d9d9d9;
+	padding:10px 0px;
+}
+.order-info{
+	display: inline-block;
+}
+.hotel-name{
+	/*width: 70px;*/
+	/*overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;*/
+display: inline-block;
+vertical-align: top;
+
+}
+.order-opterar{
+	height: 36px;
+	line-height: 36px;
+	margin-left:957px;
+}

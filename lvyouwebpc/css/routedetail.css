@@ -1,0 +1,115 @@
+.routedetail-page{
+	width: 1080px;
+	margin:auto;
+	margin-top:122px;
+}
+.routedetail-title{
+	line-height: 48px;
+	height: 48px;
+	border:1px dashed #d9d9d9;
+	font-size: 20px;
+	font-weight: bold;
+}
+.route-scencery{
+	margin-top: 20px;
+	font-weight: bold;
+}
+.route-scencery>span{
+	font-weight: bold;
+	font-size: 40px;
+}
+.item-secenery{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #21A6BE;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+.conwidth{
+	margin-left: 31px;
+    width: 500px !important;
+    height: 300px !important;
+}
+.font-width{
+	width: 490px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 15px;
+}
+.map-route{
+	width: 500px;
+    height: 300px;
+    display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.days-item{
+	margin-top:20px;
+}
+.daysmall-item{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color:#fff;
+	background-color: #aaa;
+	display: inline-block;
+	cursor: pointer;
+}
+.daysmall{
+	position: absolute;
+	right: 10px;
+	top:10px;
+	height: 30px;
+}
+.selectdays{
+	background-color: #5CAD77;
+}
+.map-show{
+	display: block;
+	float: right;
+}
+.days-item:after{
+	display: block;
+	content: "";
+	clear:both;
+}
+.scenerysingle-imgs{
+	margin-top: 20px;
+	font-size: 0px;
+}
+.scenerysingle-imgs>a img{
+	display: inline-block;
+	width: 185px;
+	height: 130px;
+	margin-right:20px;
+	font-size: 14px;
+}
+.scenerysingle-imgs>a{
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+.route-cover{
+	position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 90px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.3);
+    height: 130px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 185px;
+}
+.route-alert{
+	height: 48px;
+	font-size: 14px;
+}

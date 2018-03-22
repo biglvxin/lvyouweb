@@ -1,0 +1,93 @@
+body{
+	margin:0px;
+	padding:0px;
+
+}
+/*背景*/
+.login-bg{
+position:absolute;
+left:0px;
+top:0px;
+right:0px;
+bottom:0px;
+z-index:-1;
+min-height:360px;
+min-width: 640px;
+
+}
+.login-bg>img{
+width:100%;
+height:100%;
+display: block;
+}
+/***********表示层********/
+.login-page{
+width:640px;
+height:360px;
+/*border:1px solid #fff;*/
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-180px;
+margin-left: -320px;
+background-color: rgba(255,255,255,0.3);
+}
+
+
+.login-left,.login-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.login-left>img{
+	width:320px;
+	height: 300px;
+	display: block;
+	margin: 28px;
+}
+.login-input{
+	margin-top:40px;
+}
+.inputuserpwd{
+	outline: none;
+	border:1px solid #d9d9d9;
+	border-radius: 5px;
+	height: 34px;
+	width:200px;
+}
+.posbtn{
+	margin-left:44px;
+}
+label.error {
+    color: #f00;
+    font-size: 12px;
+    margin-left:0px;
+    margin-top:0px;
+}
+#username-error{
+	position: absolute;
+	left:381px;
+	top:83px;
+}
+#password-error{
+	position: absolute;
+    left: 381px;
+    top: 157px;
+}
+.res-container{
+	margin-left:20px;
+}
+.inppos{
+}
+.reg-page{
+	height: 504px;
+}
+.posbtn2{
+	margin-left:320px;
+}
+.backico{
+    position: absolute;
+    top: 10px;
+    left: 617px;
+    font-size: 20px !important;
+    cursor: pointer;
+}

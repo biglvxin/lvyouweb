@@ -1,0 +1,43 @@
+
+label.error {
+    color: #f00;
+    font-size: 12px;
+    margin-left:0px;
+    margin-top:0px;
+    font-size:14px;
+}
+#username-error{
+    position: absolute;
+    left: 261px;
+    top: 166px;
+}
+#password-error{
+	position: absolute;
+    left: 261px;
+    top: 241px;
+}
+#code-error{
+	position: absolute;
+    left: 410px;
+    top: 389px;;
+}
+.reg-logo>img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.reg-logo{
+    width: 236px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+
+}
+.reg-input{
+    margin-top:18px;
+}
+#image{
+    width: 100px;
+    height: 100px;
+}

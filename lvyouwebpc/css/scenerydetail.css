@@ -1,0 +1,222 @@
+.scenerydetail-page{
+	width: 1080px;
+	margin:auto;
+	margin-top: 122px;
+}
+.sdetailcontent-title{
+	height: 48px;
+	line-height: 48px;
+	font-size: 20px;
+	font-weight: bold;
+	border:1px dashed #d9d9d9;
+	margin: 20px 0px;
+}
+.imgtitle-left,.imgtitle-right{
+	display: inline-block;
+	vertical-align: top;
+	padding:20px 0px;
+}
+.sdetail-imgtitle{
+	margin-left:20px;
+}
+.imgtitle-left>img{
+	width: 690px;
+	height: 370px;
+	margin-left:-19px;
+}
+.title-rtop>img,.title-rbottom>img{
+	width:305px;
+	height: 183px;
+}
+.title-rbottom>img{
+	margin-top:3px;
+}
+.sdetail-titletext{
+	font-size: 16px;
+	line-height: 32px;
+	margin-top:20px;
+}
+.textintround-container{
+	/*height: 100px;*/
+	overflow: auto;
+	border-bottom: 1px solid #d9d9d9;
+	color:#666;
+	padding-bottom: 20px;
+	line-height: 20px;
+}
+.sizechange{
+	border-bottom: 0px solid #d9d9d9;
+	height: 50px;
+}
+.noborder2{
+	/*height: 60px;*/
+	border-bottom: 0px solid #d9d9d9;
+	/*overflow: auto;*/
+}
+.text-list{
+	font-size: 0px;
+}
+.text-sdlist-item{
+	width: 360px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+}
+.discuss{
+	min-height: 200px;
+	border-bottom: 1px dashed #d9d9d9;
+	padding: 20px 0px;
+}
+.use-discuss-info{
+	height: 48px;
+	position: relative;
+}
+.touxiang{
+	display: inline-block;
+}
+.img-urse{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+}
+.zangimg{
+	display: inline-block;
+	vertical-align: top;
+	    margin-left: 519px;
+	cursor:pointer;
+}
+.bandang-opeater{
+	position: relative;
+
+}
+.banggrey{
+	color:#aaa;
+}
+.pinglun-scenerydetail{
+	position: absolute;
+	right:10px;
+	cursor: pointer;
+}
+.pinglun-scenerydetail:hover{
+	color:#5CAD77;
+}
+.sdhuifu{
+	width: 1080px;
+	min-height: 80px;
+	border-top:1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+}
+.green{
+	color:#5CAD77;
+	width: 400px;
+	display: inline-block;
+}
+.sdhuifu>img{
+	width: 20px;
+	height: 20px;
+}
+.huifupos{
+	margin-left: 938px;
+}
+.huifu-content{
+	min-height:50px;
+}
+.pinglun-content{
+	width: 1080px;
+	height: 150px;
+	border:1px solid #5CAD77;
+	margin: 20px 0px;
+}
+.btnhuifupos{
+	margin-left: 998px;
+}
+.pinglun-border{
+	display: none;
+}
+.sdhotel-left,.sdhotel-right{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.place-hotel-container{
+	width: 1080px;
+	margin:auto;
+}
+.sdhotel-left img{
+	width: 620px;
+	height: 420px;
+}
+.sdright-top,.sdright-bottom{
+	width: 340px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.sdright-bottom{
+	margin-top:19px;
+}
+.near-hotel-title{
+	height: 52px;
+	width: 620px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:369px;
+	left:0px;
+	line-height: 52px;
+	color:#fff;
+}
+.sdpricepos{
+	margin-left:486px;
+}
+.sdpricepos-small{
+	position: absolute;
+    left: 119px;
+    margin-left: 169px;
+}
+.near-small{
+	width: 340px;
+	top:148px;
+}
+.notes-pos{
+	margin-left: 994px;
+    margin-top: -100px;
+}
+#container{
+	width: 1080px!important;
+	height: 360px!important;
+	display: inline-block !important;
+	position: relative!important;
+	top:40px !important;
+
+}
+#tip{
+	left: 0px!important;
+    right: 0px!important;
+    width: 360px!important;
+    top:-360px!important;
+    position: relative!important;
+    width: 360px!important;
+}
+.dialog{
+	position: fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	display: none;
+	/*background-color:;*/
+}
+.dialog-info{
+	position: relative;
+	width: 200px;
+	height: 100px;
+	background-color: rgba(0,0,0,0.3);
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	color:#fff;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 5px;
+	font-size: 20px;
+}

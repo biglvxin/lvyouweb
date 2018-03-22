@@ -1,0 +1,36 @@
+.hoteldetail-page{
+	width: 1080px;
+	margin:auto;
+	margin-top:122px;
+}
+.hoteldetail-place{
+	height: 48px;
+	line-height: 48px;
+	font-size: 20px;
+	font-weight: bold;
+	border:1px dashed #d9d9d9;
+	margin: 20px 0px;
+}
+.hoteldetail-img{
+	margin-left:-41px;
+}
+.hoteldetail-img>img{
+	display: inline-block;
+	width: 300px;
+	height: 240px;
+	margin-bottom: 20px;
+	margin-left:40px;
+}
+.hotelgonglv-pageul{
+	min-height: 50px;
+	overflow: auto;
+	border-bottom: 1px solid #d9d9d9;
+}
+.hotelgonglv-pageul>li{
+	color:#aaa;
+	display: inline-block;
+}
+.hotelgonglv-pageul img{
+	width: 16px;
+	height: 16px;
+}

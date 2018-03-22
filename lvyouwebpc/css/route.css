@@ -1,0 +1,92 @@
+.route-page{
+	width: 1080px;
+	margin:auto;
+	margin-top:122px;
+}
+ #panel,#panel2,#panel3,#panel4 {
+    position: absolute;
+    background-color: white;
+    max-height:435px;
+    overflow-y: auto;
+    top: 0px;
+    left:799px;
+    width: 280px;
+}
+#container,#container2,#container3,#container4{
+	width:798px;
+	height: 300px;
+}
+.weizi{
+    position: relative;
+	width: 791px;
+	height: 333px;
+	
+}
+.route-recomitem{
+   
+    width: 1080px;
+    margin-top: 20px;
+}
+.route-place-title{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left:10px;
+}
+.route-color{
+	color:#aaa;
+	padding-left:10px;
+	line-height: 24px;
+}
+.area-route-item{
+	border:1px solid #d9d9d9;
+	width: 224px;
+	min-height:130px; 
+}
+.route-item-top{
+
+}
+.route-hot{
+	width: 30px;
+	height: 30px;
+	background-color: #5CAD77;
+	line-height: 30px;
+	text-align: center;
+	color:#fff;
+	display: inline-block;
+}
+.route-item-midden,.route-item-button{
+	margin-top:10px;
+}
+.route-item-midden>img{
+	width: 222px;
+	height: 130px;
+}
+.route-plan{
+	width: 62px;
+	height: 26px;
+	border-radius: 32px;
+	line-height: 26px;
+	text-align: center;
+	background-color: #d9d9d9;
+	color:#fff;
+	display: inline-block;
+}
+.area-route-item{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.route-day-more>a{
+	margin-left: 88px;
+}
+.route-hottwo{
+	background-color: #F48A37;
+}
+.route-recommend-pos{
+	margin-left:30px;
+}
+.route-title{
+	text-align:center;
+	line-height: 32px;
+}
